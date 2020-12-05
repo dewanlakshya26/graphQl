@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "f82c2f41-6fa4-454e-badd-33ea07736e18",
+		"name": "graphQL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "single book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   book(id: \"123\") {\n     title\n     authors\n     publisher\n   }"
+				},
+				"url": {
+					"raw": "http://localhost:8091/rest/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8091",
+					"path": [
+						"rest",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "books",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   allBooks {\n     isn\n     title\n     authors\n     publisher\n   }\n }"
+				},
+				"url": {
+					"raw": "http://localhost:8091/rest/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8091",
+					"path": [
+						"rest",
+						"books"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
